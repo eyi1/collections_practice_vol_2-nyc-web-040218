@@ -26,3 +26,10 @@ list.delete_if do |word|
   word.class != String
 end
 end
+
+
+def count_elements (list)
+
+  list.group_by(&:itself)
+   .map{|k, v| k.merge(count: v.length)}
+end
