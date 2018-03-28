@@ -33,3 +33,7 @@ def count_elements (list)
   list.group_by(&:itself)
    .map{|k, v| k.merge(count: v.length)}
 end
+
+def merge_data (list)
+l1[0].values.map.with_index {|l, i| l2[i].merge(l)}
+end
