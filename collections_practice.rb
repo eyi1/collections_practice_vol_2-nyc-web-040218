@@ -34,6 +34,6 @@ def count_elements (list)
    .map{|k, v| k.merge(count: v.length)}
 end
 
-def merge_data (list)
+def merge_data (l1, l2)
 l1[0].values.map.with_index {|l, i| l2[i].merge(l)}
 end
